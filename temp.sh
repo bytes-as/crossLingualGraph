@@ -36,30 +36,18 @@ cd $ROOT
 
 
 
-
-# generate monolingual embedding 
-echo "$EXP_DIR/english_$FREQ1/english_int_${FREQ1}.VEC"
-$ROOT/word2vec/word2vec -train $EXP_DIR/english_$FREQ1/english_int_${FREQ1}.walks -output $EXP_DIR/english_$FREQ1/english_int_${FREQ1}.VEC  -cbow 1 -size 200 -window 8 -negative 25 -hs 0 -sample 1e-4 -threads 30 1 -iter 15
-
-$ROOT/word2vec/word2vec -train $EXP_DIR/hindi_$FREQ2/hindi_int_${FREQ2}.walks -output $EXP_DIR/hindi_$FREQ2/hindi_int_${FREQ2}.VEC  -cbow 1 -size 200 -window 8 -negative 25 -hs 0 -sample 1e-4 -threads 30 1 -iter 15
-
-
-
-
-# convert embedding from int to words
-$PYTHON $SCRIPTS/convert_embedding.py $EXP_DIR/english_$FREQ1/english_int_${FREQ1}.VEC $EXP_DIR/english_$FREQ1/int2word_${FREQ1}.english --OUTPUT $EXP_R/english_$FREQ1/english_word_${FREQ1}.VEC
-
-$PYTHON $SCRIPTS/convert_embedding.py $EXP_DIR/hindi_$FREQ2/hindi_int_${FREQ2}.VEC $EXP_DIR/hindi_$FREQ2/int2word_${FREQ2}.hindi --OUTPUT $EXP_DIR/hindi_$FREQ2/hindi_word_${FREQ2}.VEC
-
-
-
-
-
 # convert walks from int to words
 $PYTHON $SCRIPTS/convert_walks.py $EXP_DIR/english_$FREQ1/english_int_${FREQ1}.walks $EXP_DIR/english_$FREQ1/int2word_${FREQ1}.english --OUTPUT $EXP_DIR/english_$FREQ1/english_word_${FREQ1}.walks --OUT_DELIMITER ' '
 
 $PYTHON $SCRIPTS/convert_walks.py $EXP_DIR/hindi_$FREQ2/hindi_int_${FREQ2}.walks $EXP_DIR/hindi_$FREQ2/int2word_${FREQ2}.hindi --OUTPUT $EXP_DIR/hindi_$FREQ2/hindi_word_${FREQ2}.walks --OUT_DELIMITER ' '
 
+
+
+# generate monolingual embedding 
+echo "$EXP_DIR/english_$FREQ1/english_int_${FREQ1}.VEC"
+$ROOT/word2vec/word2vec -train $EXP_DIR/english_$FREQ1/english_word_${FREQ1}.walks -output $EXP_DIR/english_$FREQ1/english_word_${FREQ1}.VEC  -cbow 1 -size 200 -window 8 -negative 25 -hs 0 -sample 1e-4 -threads 30 1 -iter 15
+
+$ROOT/word2vec/word2vec -train $EXP_DIR/hindi_$FREQ2/hindi_word_${FREQ2}.walks -output $EXP_DIR/hindi_$FREQ2/hindi_word_${FREQ2}.VEC  -cbow 1 -size 200 -window 8 -negative 25 -hs 0 -sample 1e-4 -threads 30 1 -iter 15
 
 
 # filter graphs (was hoping to remove some amount of data because it's not available in both languages, Not much effect though)
