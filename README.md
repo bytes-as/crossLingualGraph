@@ -33,14 +33,14 @@ drwxr-xr-x. 6 16CS10008 btech 4.0K May  4 04:27 ./
 drwxr-xr-x. 8 16CS10008 btech 4.0K May  4 04:34 ../
 drwxr-xr-x. 2 16CS10008 btech 4.0K May  4 04:21 english_20000/
 drwxr-xr-x. 2 16CS10008 btech 4.0K May  4 03:15 english_25000/
--rw-r--r--. 1 16CS10008 btech  11M May  4 04:20 english_25000_21000.cross_emb
+-rw-r--r--. 1 16CS10008 btech  11M May  4 04:20 english_25000_21000.cross_emb  <-- english embedding in crosslingual domain
 drwxr-xr-x. 2 16CS10008 btech 4.0K May  4 04:22 hindi_20000/
 drwxr-xr-x. 2 16CS10008 btech 4.0K May  4 02:47 hindi_21000/
--rw-r--r--. 1 16CS10008 btech  15M May  4 04:20 hindi_25000_21000.cross_emb
+-rw-r--r--. 1 16CS10008 btech  15M May  4 04:20 hindi_25000_21000.cross_emb  <-- hindi embedding in cross lingual domain
 -rw-r--r--. 1 16CS10008 btech 5.8G May  4 04:23 merged_walks_20000_20000.txt
--rw-r--r--. 1 16CS10008 btech 1.4G May  4 03:59 merged_walks_25000_21000.txt
--rw-r--r--. 1 16CS10008 btech 110M May  4 04:20 merged_walks_25000_21000.VEC
--rw-r--r--. 1 16CS10008 btech 910K May  4 04:20 test_dict.txt
+-rw-r--r--. 1 16CS10008 btech 1.4G May  4 03:59 merged_walks_25000_21000.txt  <-- merged walks
+-rw-r--r--. 1 16CS10008 btech 110M May  4 04:20 merged_walks_25000_21000.VEC  <-- merged embeddings
+-rw-r--r--. 1 16CS10008 btech 910K May  4 04:20 test_dict.txt  <-- tranlational dictionary with ' ' as delimiter in line
 ```
 and in the folder named `english_25000` which means english processed data with minimum node frequency of 25000:
 ```
