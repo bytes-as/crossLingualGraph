@@ -3,14 +3,14 @@
 
 The script `script.sh` follows a sequence of python scripts and monolingual embedding generation directly invoked from word2vec binary files
 
- `script.sh` script takes 7 command line arguments:
- 1. Source language graph database file <FILE PATH>
- 2. Minimum frequency for the source language graph nodes which is to be used in generating sentences <INT>
- 3. Source language graph database file <FILE PATH>
- 4. Minimum frequency for the target language graph nodes which is to be used in generating sentences <INT>
- 5. Dictionary for translation of source langauge to target langauge <two words per line seperated by '\t'>
- 6. Number of walks for the source language to be generated in between the process <INT>
- 7. Number of walks for the target language to be generated in between the process <INT>
+`script.sh` script takes 7 command line arguments:
+1. Source language graph database file <FILE PATH>
+2. Minimum frequency for the source language graph nodes which is to be used in generating sentences <INT>
+3. Source language graph database file <FILE PATH>
+4. Minimum frequency for the target language graph nodes which is to be used in generating sentences <INT>
+5. Dictionary for translation of source langauge to target langauge <two words per line seperated by '\t'>
+6. Number of walks for the source language to be generated in between the process <INT>
+7. Number of walks for the target language to be generated in between the process <INT>
 
 the script will work as follows:
 1. convert word edge list graph to int edge list graph for both language, target and source
