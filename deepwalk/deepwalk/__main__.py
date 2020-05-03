@@ -12,8 +12,6 @@ import logging
 
 from . import graph
 from . import walks as serialized_walks
-from gensim.models import Word2Vec
-from .skipgram import Skipgram
 
 from six import text_type as unicode
 from six import iteritems
@@ -105,11 +103,6 @@ def process(args):
         writeFile.write('\t'.join(walk) + '\n')
     print('Walks printing completed')
     exit()
-    model = Skipgram(sentences=walks_corpus, vocabulary_counts=vertex_counts,
-                     size=args.representation_size,
-                     window=args.window_size, min_count=0, trim_rule=None, workers=args.workers)
-
-  model.wv.save_word2vec_format(args.output)
 
 
 def main():
