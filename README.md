@@ -26,7 +26,10 @@ the script will work as follows:
 Each individual python script has its own help section which can be accessed by `python <script>.py -h`.
 
 Result will be in the exp folder here itself.
-an example is as follows:
+an example of script running could be:
+`user@machine:~/crossLingualGraph$ ./script.sh ./../may/corpus/LMI_w1000_p1000 20000 ./../may/corpus/DT_hin 200
+00 ./../may/corpus/en-hi.txt  1 1 `
+which will result in following files:
 ```
 user@machine:~/crossLingualGraph/exp$ ll -h
 drwxr-xr-x. 6 16CS10008 btech 4.0K May  4 04:27 ./
