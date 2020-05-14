@@ -19,6 +19,11 @@ the script will work as follows:
 3. run a conversion of int walks to word walks for both langauges
 4. run monolingual embedding generation on both random walks generated for intermeditary analysis
 5. Merge walks of two languages using the translational dictionaries
+	* for every sentence in first language walks
+	* take each word
+	* find it's translation
+	* find the sentences with the translated word in second language walks
+	* create a new sentence by joining those two sentence
 6. Generate word embedding of that merged walks data
 7. Split word embedding according to the language
 8. Call vecmap scripts to evaluate cross lingual word embedding
