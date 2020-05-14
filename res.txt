@@ -1,0 +1,111 @@
+Model: SpanBert ,
+Fine tuning: None ,
+Evaluation Data: dataset 1 {
+	exact': 0.0, 
+	'f1': 5.6225614167307025, 
+	'total': 645, 
+	'HasAns_exact': 0.0, 
+	'HasAns_f1': 8.738679792268199, 
+	'HasAns_total': 415, 
+	'NoAns_exact': 0.0, 
+	'NoAns_f1': 0.0, 
+	'NoAns_total': 230, 
+	'best_exact': 35.65891472868217, 
+	'best_exact_thresh': 0.0, 
+	'best_f1': 35.65891472868217, 
+	'best_f1_thresh': 0.0
+}
+
+Model: SpanBert ,
+Fine tuning: None ,
+Evaluation Data: Squad v2 Test {
+	'exact': 0.14318200960161712, 
+	'f1': 3.494994784525031, 
+	'total': 11873, 
+	'HasAns_exact': 0.10121457489878542, 
+	'HasAns_f1': 6.814452273391648, 
+	'HasAns_total': 5928, 
+	'NoAns_exact': 0.18502943650126155, 
+	'NoAns_f1': 0.18502943650126155, 
+	'NoAns_total': 5945, 
+	'best_exact': 50.07159100480081, 
+	'best_exact_thresh': 0.0, 
+	'best_f1': 50.07805203794372, 
+	'best_f1_thresh': 0.0
+}
+
+Model : SpanBert ,
+Fine tuning: Squad V2 Train set ,
+Evaluation Data : Squad V2 Test Set {
+	'exact': 42.96302535163817, 
+	'f1': 46.48523127328296, 
+	'total': 11873, 
+	'HasAns_exact': 86.04925775978407, 
+	'HasAns_f1': 93.10377039603385, 
+	'HasAns_total': 5928, 
+	'NoAns_exact': 0.0, 
+	'NoAns_f1': 0.0, 
+	'NoAns_total': 5945, 
+	'best_exact': 50.11370336056599, 
+	'best_exact_thresh': 0.0, 
+	'best_f1': 50.47686653038413, 
+	'best_f1_thresh': 0.0
+}
+
+
+Model : SpanBert ,
+Fine Tuning : Squad v2 Train Set , 
+Evalutaion  : Dataset 1 {
+	'exact': 20.62015503875969,
+	'f1': 32.94649534406695,
+	'total': 645,
+	'HasAns_exact': 32.04819277108434,
+	'HasAns_f1': 51.20599878776672,
+	'HasAns_total': 415,
+	'NoAns_exact': 0.0,
+	'NoAns_f1': 0.0,
+	'NoAns_total': 230,
+	'best_exact': 35.968992248062015,
+	'best_exact_thresh': 0.0,
+	'best_f1': 37.48202448612846,
+	'best_f1_thresh': 0.0
+}
+
+
+
+
+Model : Bert ,
+Fine Runing : None ,
+Evaluation : Squad V2 Test {
+	'exact': 0.47165838457003284, 
+	'f1': 4.181757109246239, 
+	'total': 11873, 
+	'HasAns_exact': 0.06747638326585695,
+	'HasAns_f1': 7.498313454467034,
+	'HasAns_total': 5928, 
+	'NoAns_exact': 0.8746846089150546, 
+	'NoAns_f1': 0.8746846089150546, 
+	'NoAns_total': 5945, 
+	'best_exact': 50.07159100480081, 
+	'best_exact_thresh': 0.0, 
+	'best_f1': 50.07790785816559, 
+	'best_f1_thresh': 0.0
+}
+
+Model : Bert ,
+Fine Tuning : None ,
+Evaluation : Dataset 1 {
+	'exact': 0.0, 
+	'f1': 4.812343507187106, 
+	'total': 645, 
+	'HasAns_exact': 0.0, 
+	'HasAns_f1': 7.479425450929358, 
+	'HasAns_total': 415, 
+	'NoAns_exact': 0.0, 
+	'NoAns_f1': 0.0, 
+	'NoAns_total': 230, 
+	'best_exact': 35.65891472868217, 
+	'best_exact_thresh': 0.0, 
+	'best_f1': 35.71305524793897, 
+	'best_f1_thresh': 0.0
+}

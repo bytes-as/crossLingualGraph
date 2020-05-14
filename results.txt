@@ -1,0 +1,1 @@
+Coverage: 13.81% Accuracy: 0.01% | walks length: 3 | MIN FREQ: 20000
